@@ -1,0 +1,4 @@
+c:\Users\Aira\Documents\Visual Studio 2010\Projects\KNB.Demo\KNB.Demo\bin\KNB.Demo.dll
+c:\Users\Aira\Documents\Visual Studio 2010\Projects\KNB.Demo\KNB.Demo\bin\KNB.Demo.pdb
+c:\Users\Aira\Documents\Visual Studio 2010\Projects\KNB.Demo\KNB.Demo\obj\Debug\KNB.Demo.dll
+c:\Users\Aira\Documents\Visual Studio 2010\Projects\KNB.Demo\KNB.Demo\obj\Debug\KNB.Demo.pdb

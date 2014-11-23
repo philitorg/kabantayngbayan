@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+    <title></title>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+   
+$(document).ready(function() {
+alert('test');
+    $.ajax({
+        type: "POST",
+        contentType: "application/json; charset=utf-8",
+        url: "http://philgeps.cloudapp.net:5000/api/action/datastore_search_sql?sql=SELECT%20distinct%20province%20from%20%22ec10e1c4-4eb3-4f29-97fe-f09ea950cdf1%22%20WHERE%20country_code%20=%20%27PH%27%20order%20by%20province",
+        data: {},
+        dataType: "json",
+        success: function(data) {
+            var records = data.result.records;
+            alert(''+records.length);
+            $.each(records, function(value) {
+                $("[id$='uxRegion']").append($("<option></option>").val(value.province).html(value.province));
+            });
+        }
+        error: function ajaxError(response) {
+            alert(response.status + ' ' + response.statusText);
+        }
+    });
+});
+    </script>
+</head>
+<body>
+    <form method="post" action="General.aspx" id="ctl01">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <select id="uxRegion">
+        </select>
+        <select id="uxBuyers">
+            <option></option>
+        </select>
+    </div>
+    <div class="clear">
+    </div>
+    </div>
+    <div class="footer">
+    </div>
+    </form>
+</body>
+</html>
