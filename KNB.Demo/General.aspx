@@ -26,14 +26,18 @@
                 }
             });
         });
-    </script>
+        function uxGo_onclick() {
+            location.href = "Province.aspx?id=" + $("#uxProvince").val(); ;
+        }
+
+       </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
+    <label for="uxProvince">Province:</label>
     <select id="uxProvince">
         <option></option>
     </select>
-    <input id="uxGo" type="button" value="button" /><uc2:TopBiggestAwards 
+    <input id="uxGo" type="button" value="Go to Province" onclick="return uxGo_onclick()" /><uc2:TopBiggestAwards 
         ID="TopBiggestAwards1" runat="server" />
     <uc1:TopRecentAwards 
     ID="TopRecentAwards1" runat="server" />
