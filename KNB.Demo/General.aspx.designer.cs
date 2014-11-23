@@ -13,6 +13,15 @@ namespace KNB.Demo {
     public partial class General {
         
         /// <summary>
+        /// TopBiggestAwards1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::KNB.Demo.TopBiggestAwards TopBiggestAwards1;
+        
+        /// <summary>
         /// TopRecentAwards1 control.
         /// </summary>
         /// <remarks>

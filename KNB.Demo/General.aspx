@@ -3,6 +3,8 @@
 
 <%@ Register src="TopRecentAwards.ascx" tagname="TopRecentAwards" tagprefix="uc1" %>
 
+<%@ Register src="TopBiggestAwards.ascx" tagname="TopBiggestAwards" tagprefix="uc2" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <script src="Scripts/jquery-2.1.1.min.js" type="text/javascript"></script>
        <script language="javascript" type="text/javascript">
@@ -31,7 +33,9 @@
     <select id="uxProvince">
         <option></option>
     </select>
-    <input id="uxGo" type="button" value="button" /><uc1:TopRecentAwards 
+    <input id="uxGo" type="button" value="button" /><uc2:TopBiggestAwards 
+        ID="TopBiggestAwards1" runat="server" />
+    <uc1:TopRecentAwards 
     ID="TopRecentAwards1" runat="server" />
 </asp:Content>
 
